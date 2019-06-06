@@ -2,16 +2,16 @@
 int main()
 {
   int a,b,sum;
-  int getdata()
+  int getdata(int a,int b)
   {
    printf("Enter the two numbers:");
    scanf("%d%d",&a,&b);
    }
-   int add()
+   int add(int a,int b)
    {
 	sum=a+b;
    }
-   int putdata()
+   int putdata(int sum)
    {
 	printf("Sum of two num is",&sum);
    }
