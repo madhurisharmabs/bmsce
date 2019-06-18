@@ -1,13 +1,16 @@
-def getdata(n):
-    n=input("Enter numbers of num:")
-    n=int(n)
+def getdata(num):
+    n=int(input("Enter size of num:"))
     print("Enter the num:")
-    return n
-def compute(n):
-    numlist=[1,2,3,4,5,6]
-    for num in numlist:
-        mysum=mysum+num
-        print("numlist")
+    for i in range(n):
+        x=int((input())
+        num.append(x)
+        i+=1
+    return num
+    
+def compute(num):
+        mysum=0
+        n=len(num)
+        mysum=sum(num)
         print("num")
         return mysum
     
@@ -16,11 +19,9 @@ def output(mysum):
      
 def main():
 
-    n=0
-    mysum=0
-    num=0
-    n=getdata(n)
-    mysum=compute(n)
-    output(mysum)
+    arr=[]
+    arr=getdata(arr)
+    result=compute(arr)
+    output(result)
 
 main()
