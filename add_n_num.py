@@ -1,4 +1,4 @@
-ddef getdata(num):
+def getdata(num):
     n=int(input("Enter size of num:"))
     print("Enter the num:")
     for i in range(n):
