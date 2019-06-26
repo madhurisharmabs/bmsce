@@ -55,3 +55,4 @@ int main()
         sum(&f1,&f2);
         putdata(ans);
         return 0;
+}
