@@ -109,7 +109,7 @@ int main()
         struct Fraction f2;
         int ans=0;
         getdata(&f1,&f2);
-        sum(&f1,&f2);
+        sum(f1,f2);
         putdata(ans);
         return 0;
 }
