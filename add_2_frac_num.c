@@ -23,7 +23,7 @@ void getdata(struct Fraction *f1,struct Fraction *f2)
         //printf("The first and second fraction are %d/%d,%d/%d num :\n",f1->n,f1->d,f2->n,f2->d);
 
 }
-int sum(struct Fraction *f1,struct Fraction *f2)
+int sum(struct Fraction f1,struct Fraction f2)
 {
         int a,b,lcm,x;
         a=f1->d;
