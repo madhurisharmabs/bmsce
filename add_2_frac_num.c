@@ -4,8 +4,7 @@ struct Fraction
         int n;
         int d;
 };
-
-struct Fraction getdata(struct Fraction *f1,struct Fraction *f2);
+void getdata(struct Fraction *f1,struct Fraction *f2);
 int  gcd(int a,int b);
 int sum(struct Fraction,struct Fraction f2,int *ans,int *lcm);
 void putdata(int ans,struct Fraction f1,struct Fraction f2,int lcm);
@@ -16,13 +15,12 @@ int gcd(int a,int b)
         else
            return gcd(b, a % b);
 }
- struct Fraction  getdata(struct Fraction *f1,struct Fraction *f2)
+void getdata(struct Fraction *f1,struct Fraction *f2)
 {
         printf("first fraction n1,d1:");
         scanf("%d%d",&f1->n,&f1->d);
         printf("second fraction n2,d2:");
         scanf("%d%d",&f2->n,&f2->d);
-        //return *f1;
 }
 int sum(struct Fraction f1,struct Fraction f2,int *ans,int *lcm)
 {
@@ -55,4 +53,6 @@ int main()
         putdata(ans,f1,f2,lcm);
         return 0;
 }
-"pro2.c" [unix] 57L, 1250C                                                :wq
+~
+~
+"pro2.c" [unix] 55L, 1210C                                   
