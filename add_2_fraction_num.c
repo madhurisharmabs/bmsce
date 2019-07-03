@@ -1,3 +1,4 @@
+//using recursion method of gcd function and it is called in sum function 
 #include<stdio.h>
 struct Fraction
 {
