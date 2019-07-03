@@ -55,4 +55,5 @@ int main()
         sum(f1,f2,&res,lcm);
         putdata(f1,f2,&res);
         return 0;
+}
 -- INSERT --                                                   
