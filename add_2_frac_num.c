@@ -42,9 +42,8 @@ int main()
         struct Fraction f1;
         struct Fraction f2;
         struct Fraction res;
-        int lcm=0;
         getdata(&f1,&f2);
-        sum(f1,f2,&res,lcm);
+        sum(f1,f2,&res);
         putdata(f1,f2,&res);
         return 0;
 }
