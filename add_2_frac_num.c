@@ -12,7 +12,7 @@ void getdata(struct Fraction *f1,struct Fraction *f2)
         printf("second fraction n2,d2:");
         scanf("%d%d",&f2->n,&f2->d);
 }
-int sum(struct Fraction f1,struct Fraction f2,struct Fraction *res,int lcm)
+int sum(struct Fraction f1,struct Fraction f2,struct Fraction *res)
 {
         int temp=0;
         int i;
