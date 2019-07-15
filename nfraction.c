@@ -23,8 +23,9 @@ void compute(int n,struct Fraction f[n],struct Fraction *res)
 
         int temp1=1,temp2=0;
         int i=0;
-        res->num = temp2=temp2+f[i].num * (temp1/f[i].den);//calculate numerator
         res->den = temp1=temp1 * f[i].den; //calculate denominator
+        res->num = temp2=temp2+f[i].num * (temp1/f[i].den);//calculate numerator
+
         if (res->num > res->den)
         {
                 temp1 = res->den;
@@ -34,7 +35,7 @@ void compute(int n,struct Fraction f[n],struct Fraction *res)
                 temp2 = res->num;
         }
 
-        for (i = 0; i < n; i--)
+        for (int i = temp1 ; i > 0; --i)
         {
                 if (res->num % i == 0 && res->den % i == 0)
                 {
@@ -42,6 +43,7 @@ void compute(int n,struct Fraction f[n],struct Fraction *res)
                         res->den = res->den / i;
                 }
         }
+
 
 }
 void putdata(int n,struct Fraction f[n],struct Fraction res)
