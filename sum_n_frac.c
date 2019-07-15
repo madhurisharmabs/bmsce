@@ -1,3 +1,4 @@
+//using recursion of gcd function 
 #include<stdio.h>
 struct Fraction
 {
