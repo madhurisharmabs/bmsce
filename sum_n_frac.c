@@ -46,7 +46,7 @@ void compute(int n,struct Fraction f[n],struct Fraction *res)
        }
 
        gcdres=gcd(temp1,temp2);
-       printf("The gcd num is %d\n",gcdres);
+      
        res->num = temp2/gcdres;
 
        res->den = temp1/gcdres;
