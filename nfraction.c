@@ -21,21 +21,26 @@ void getdata(int n,struct Fraction f[n])
 void compute(int n,struct Fraction f[n],struct Fraction *res)
 {
 
-        int temp1=1,temp2=0;
+        if (res->num > res->den)    int temp1=1,temp2=0;
         int i=0;
+        for(i=0;i<n;i++)
+        {
         res->den = temp1=temp1 * f[i].den; //calculate denominator
+        }
+        for(i=0;i<n;i++)
+        {
         res->num = temp2=temp2+f[i].num * (temp1/f[i].den);//calculate numerator
-
+        }
         if (res->num > res->den)
         {
-                temp1 = res->den;
+                temp1= res->den;
          }
         else
         {
-                temp2 = res->num;
+                temp2= res->num;
         }
 
-        for (int i = temp1 ; i > 0; --i)
+        for (int i = 0; i > n-1 ; i--)
         {
                 if (res->num % i == 0 && res->den % i == 0)
                 {
